@@ -1,0 +1,156 @@
+.app {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-message {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 0 black;
+  margin: 0 auto;
+}
+
+.top-right-controls {
+  display: flex;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sidebar {
+  width: 220px;
+  padding: 30px;
+  background-color: #1a1a1a; 
+  position: fixed;
+  top: 60px;
+  left: 0;
+  height: calc(100% - 60px);
+  overflow-y: auto;
+  border: none; 
+}
+
+
+.hydra-logo, .hydra-text {
+  display: none;
+}
+
+.hydra-button {
+  border-radius: 0; 
+  background-color: transparent; 
+  border: none; 
+}
+
+
+.search-container {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.search {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  background-color: #333;
+  color: white;
+}
+
+.option-buttons button {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.login-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.login-buttons button {
+  width: auto;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  border: none;
+}
+
+.login-buttons select {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.main-content {
+  margin-left: 230px;
+  margin-top: 60px;
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: white;  
+}
+
+.photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo-item {
+  margin: 0 12px;
+  text-align: center;
+}
+
+.size-tag {
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.selected {
+  border: 2px solid blue;
+}
+
+.zoom-controls {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 30px;
+}
+
+.zoom-controls select {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(71, 73, 73);
+}
